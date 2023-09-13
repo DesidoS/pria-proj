@@ -112,7 +112,7 @@
 } */
 
 .menu-image-2 {
-  background-image: url("/img/menu/2.jpg");
+  background-image: url("../img/menu/2.jpg");
 }
 
 /* .menu-image-3 {
@@ -120,19 +120,19 @@
 } */
 
 .menu-image-4 {
-  background-image: url("/img/menu/4.jpg");
+  background-image: url("../img/menu/4.jpg");
 }
 
 .about-intro {
-  background-image: url("/img/backgrounds/about_us_page_main_img.jpg");
+  background-image: url("../img/backgrounds/about_us_page_main_img.jpg");
 }
 
 .works-intro {
-  background-image: url("/img/backgrounds/projects_main_img-min.jpg");
+  background-image: url("../img/backgrounds/projects_main_img-min.jpg");
 }
 
 .contact-intro {
-  background-image: url("/img/backgrounds/contact_page_main_img-min.jpg");
+  background-image: url("../img/backgrounds/contact_page_main_img-min.jpg");
 }
 
 .inner-image-block-1 {
