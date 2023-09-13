@@ -77,9 +77,9 @@ $(function() {
       transitionDuration: 2000,
 
       slides: [
-        { src: "/img/backgrounds/hero-background.jpg" },
-        { src: "/img/backgrounds/hero-background.jpg" },
-        { src: "/img/backgrounds/hero-background.jpg" }
+        { src: "./img/backgrounds/hero-background.jpg" },
+        { src: "./img/backgrounds/hero-background.jpg" },
+        { src: "./img/backgrounds/hero-background.jpg" }
       ],
       animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
     });
