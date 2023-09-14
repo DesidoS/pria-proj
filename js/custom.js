@@ -74,15 +74,15 @@ function updateVideoSource() {
     function switchBackground(currentWidth) {
         if (currentWidth <= 360) {
             return {
-                src: "/img/backgrounds/03_main_video_360x360px.mp4",
+                src: "./img/backgrounds/03_main_video_360x360px.mp4",
             };
         } else if (currentWidth <= 768) {
             return {
-                src: "/img/backgrounds/02_main_video_960x768px.mp4",
+                src: "./img/backgrounds/02_main_video_960x768px.mp4",
             };
         }
         return {
-            src: "/img/backgrounds/01_main_video_960x1080px.mp4",
+            src: "./img/backgrounds/01_main_video_960x1080px.mp4",
         };
     }
     
