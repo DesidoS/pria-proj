@@ -65,25 +65,62 @@ $(function() {
   // KBW-Countdown End
   // --------------------------------------------- //
 
+
+const videoBg = document.querySelector(".hero-bcg-video");
+let previousWidth = window.innerWidth;
+
+function updateVideoSource() {
+    const currentWidth = window.innerWidth;
+    function switchBackground(currentWidth) {
+        if (currentWidth <= 360) {
+            return {
+                src: "/img/backgrounds/03_main_video_360x360px.mp4",
+            };
+        } else if (currentWidth <= 768) {
+            return {
+                src: "/img/backgrounds/02_main_video_960x768px.mp4",
+            };
+        }
+        return {
+            src: "/img/backgrounds/01_main_video_960x1080px.mp4",
+        };
+    }
+    
+
+    const selectedBackground = switchBackground(currentWidth);
+    videoBg.src = selectedBackground.src;
+}
+
+updateVideoSource();
+
+window.addEventListener("resize", () => {
+    const currentWidth = window.innerWidth;
+    if (currentWidth !== previousWidth) {
+        previousWidth = currentWidth;
+        updateVideoSource();
+    }
+});
+
+
   // --------------------------------------------- //
   // Vegas Kenburns Start
   // --------------------------------------------- //
-  var bgndKenburns = $('#bgndKenburns');
-  if(bgndKenburns.length){
-    bgndKenburns.vegas({
-      timer: false,
-      delay: 10000,
-      transition: 'fade2',
-      transitionDuration: 2000,
+  // var bgndKenburns = $('#bgndKenburns');
+  // if(bgndKenburns.length){
+  //   bgndKenburns.vegas({
+  //     timer: false,
+  //     delay: 10000,
+  //     transition: 'fade2',
+  //     transitionDuration: 2000,
 
-      slides: [
-        { src: "./img/backgrounds/hero-background.jpg" },
-        { src: "./img/backgrounds/hero-background.jpg" },
-        { src: "./img/backgrounds/hero-background.jpg" }
-      ],
-      animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
-    });
-  };
+  //     slides: [
+  //       { src: "./img/backgrounds/hero-background.jpg" },
+  //       { src: "./img/backgrounds/hero-background.jpg" },
+  //       { src: "./img/backgrounds/hero-background.jpg" }
+  //     ],
+  //     animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
+  //   });
+  // };
   // --------------------------------------------- //
   // Vegas Kenburns End
   // --------------------------------------------- //

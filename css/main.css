@@ -2664,6 +2664,57 @@ form textarea:required:valid {
   height: 297.1443176269531px;
 }
 
+@media only screen and (max-width: 767px) {
+  .hero-bcg-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .hero-bcg-video {
+   height: 100%; 
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .hero-bcg-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-bcg-video {
+    scale: 1.1;
+    width: 100%;
+
+  }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+  .hero-bcg-video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1.3;
+  }
+  .hero-bcg-video {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-bcg-video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .hero-bcg-video {
+    height: 100%;
+  }
+}
+
 .media__image {
   position: absolute;
   top: 0;
