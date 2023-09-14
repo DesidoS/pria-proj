@@ -41,8 +41,9 @@
 /* Template Backgrounds Start */
 /* ------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* @font-face {
@@ -108,7 +109,7 @@
 }
 
 /* .menu-image-1 {
-  background-image: url("/img/menu/1.mp4");
+  background-image: url("../img/menu/1.jpg");
 } */
 
 .menu-image-2 {
@@ -116,7 +117,7 @@
 }
 
 /* .menu-image-3 {
-  background-image: url("/img/menu/3.mp4");
+  background-image: url("/img/menu/3.jpg");
 } */
 
 .menu-image-4 {
@@ -617,6 +618,14 @@ img {
       -ms-transform: translateY(3rem);
           transform: translateY(3rem);
 }
+
+#main .headline__deco {
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+     -moz-transform: translateY(3rem);
+      -ms-transform: translateY(3rem);
+          transform: translateY(3rem);
+}
 #main .headline__deco {
   display: none;
   position: absolute;
@@ -643,11 +652,6 @@ img {
   }
 }
 
-/* #main .headline__title::after {
-  background-image: url("/img/works/deco-title.svg");
-  content: "";
-  background-repeat: no-repeat;
-} */
 
 #main .notify__topline,
 #main .footer__halfline {
@@ -714,6 +718,19 @@ img {
   transition: all 0.6s;
 }
 #main.animate-in .headline__subtitle {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.6s 0.3s, -webkit-transform 0.6s 0.3s;
+  transition: opacity 0.6s 0.3s, -webkit-transform 0.6s 0.3s;
+  -o-transition: opacity 0.6s 0.3s, transform 0.6s 0.3s;
+  -moz-transition: opacity 0.6s 0.3s, transform 0.6s 0.3s, -moz-transform 0.6s 0.3s;
+  transition: opacity 0.6s 0.3s, transform 0.6s 0.3s;
+  transition: opacity 0.6s 0.3s, transform 0.6s 0.3s, -webkit-transform 0.6s 0.3s, -moz-transform 0.6s 0.3s;
+}
+#main.animate-in .headline__deco {
   opacity: 1;
   -webkit-transform: translateY(0);
      -moz-transform: translateY(0);
